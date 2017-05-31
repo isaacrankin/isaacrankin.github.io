@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Isaac Rankin - isaacrankin.com, @isaacrankin, https://github.com/isaacrankin/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#455C7F">
+    <title>Isaac Rankin / Web Developer Auckland, New Zealand</title>
+    <style>
+        html {
+            font-size: 16px;
+            font-family: sans-serif;
+            letter-spacing: 0.05rem;
+            text-rendering: optimizeLegibility;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            background-color: #444;
+        }
+
+        h1 {
+            font-weight: 700;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 1rem 2.5rem;
+            text-align: center;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.1);
+            background-blend-mode: multiply;
+        }
+
+        header h1 {
+            margin-bottom: 0.25em;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header h2 {
+            margin-top: 0.25em;
+            font-weight: 400;
+        }
+
+        .card {
+            max-width: 700px;
+            border-radius: 0.4rem;
+            overflow: hidden;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            margin-top: 1.5rem;
+            list-style: none;
+        }
+
+        .links a {
+          display: inline-block;
+        }
+
+        .links a:hover {
+          transform: scale(1.07);
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <header>
+        <h1>Isaac Rankin</h1>
+        <h2>Web Developer</h2>
+        <div>
+            <ul class="links">
+                <li>
+                    <a href="https://twitter.com/isaacrankin" target="_blank" title="Twitter">
+                        <img src="/svg/icon-twitter.svg" alt="Twitter" width="30" role="img">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/isaacrankin/" target="_blank" title="GitHub">
+                        <img src="/svg/icon-github.svg" alt="Github" width="30" role="img">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://codepen.io/isaacrankin/" target="_blank" title="CodePen">
+                        <img src="/svg/icon-codepen.svg" alt="CodePen" width="30" role="img">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.linkedin.com/pub/isaac-rankin/30/b94/435" target="_blank" title="LinkedIn">
+                        <img src="/svg/icon-linkedin.svg" alt="LinkedIn" width="30" role="img">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+</div>
+<script>
+    /**
+     * Returns a random integer between min (inclusive) and max (inclusive)
+     * Using Math.round() will give you a non-uniform distribution!
+     */
+    var getRandomInt = function (min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    };
+    var cssColourNames = ['AliceBlue','AntiqueWhite','Aqua','Aquamarine','Azure','Beige','Bisque','Black','BlanchedAlmond','Blue','BlueViolet','Brown','BurlyWood','CadetBlue','Chartreuse','Chocolate','Coral','CornflowerBlue','Cornsilk','Crimson','Cyan','DarkBlue','DarkCyan','DarkGoldenRod','DarkGray','DarkGrey','DarkGreen','DarkKhaki','DarkMagenta','DarkOliveGreen','Darkorange','DarkOrchid','DarkRed','DarkSalmon','DarkSeaGreen','DarkSlateBlue','DarkSlateGray','DarkSlateGrey','DarkTurquoise','DarkViolet','DeepPink','DeepSkyBlue','DimGray','DimGrey','DodgerBlue','FireBrick','FloralWhite','ForestGreen','Fuchsia','Gainsboro','GhostWhite','Gold','GoldenRod','Gray','Grey','Green','GreenYellow','HoneyDew','HotPink','IndianRed','Indigo','Ivory','Khaki','Lavender','LavenderBlush','LawnGreen','LemonChiffon','LightBlue','LightCoral','LightCyan','LightGoldenRodYellow','LightGray','LightGrey','LightGreen','LightPink','LightSalmon','LightSeaGreen','LightSkyBlue','LightSlateGray','LightSlateGrey','LightSteelBlue','LightYellow','Lime','LimeGreen','Linen','Magenta','Maroon','MediumAquaMarine','MediumBlue','MediumOrchid','MediumPurple','MediumSeaGreen','MediumSlateBlue','MediumSpringGreen','MediumTurquoise','MediumVioletRed','MidnightBlue','MintCream','MistyRose','Moccasin','NavajoWhite','Navy','OldLace','Olive','OliveDrab','Orange','OrangeRed','Orchid','PaleGoldenRod','PaleGreen','PaleTurquoise','PaleVioletRed','PapayaWhip','PeachPuff','Peru','Pink','Plum','PowderBlue','Purple','Red','RosyBrown','RoyalBlue','SaddleBrown','Salmon','SandyBrown','SeaGreen','SeaShell','Sienna','Silver','SkyBlue','SlateBlue','SlateGray','SlateGrey','Snow','SpringGreen','SteelBlue','Tan','Teal','Thistle','Tomato','Turquoise','Violet','Wheat','White','WhiteSmoke','Yellow','YellowGreen'];
+    document.body.style['background-color'] = cssColourNames[getRandomInt(0, cssColourNames.length)];
+</script>
+</body>
+</html>
